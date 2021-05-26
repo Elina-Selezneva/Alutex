@@ -78,7 +78,7 @@ const nameInput = document.querySelector('#popup_name')
 const errorName = document.querySelector('.popup_name_error')
 
 function validateName() {
-    const validName = /^[а-яf-z ]+$/i
+    const validName = /^[а-яa-z ]+$/i
     if (validName.test(nameInput.value)) {
         nameInput.classList.remove('popup_false');
         errorText.style.display = "none";

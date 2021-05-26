@@ -707,13 +707,13 @@
             <div class="popap_onebox">
                 <div class="popap_box_forinput">
                     <span class="input_text input_what_margin">Имя<span class="form_red">*</span></span>
-                    <input type="text" class="input input_1" placeholder="Иванов Иван" id="popup_name">
-                    <span class="popup_text_false popup_text_block">Укажите фамилию и имя через пробел</span>
+                    <input type="text" class="input input_1" placeholder="Иванов Иван" id="popup_name" onkeyup="validateName()">
+                    <span class="popup_text_false popup_name_error">Укажите фамилию и имя через пробел</span>
                 </div>
                 <div class="popap_box_forinput">
                     <span class="input_text input_what_margin">Телефон<span class="form_red">*</span></span>
-                    <input type="text" class="input input_1" required placeholder="+7 (999) 588-88-88" id="phone" onkeydown="validatePhone()">
-                    <span class="popup_text_false popup_text_block">Номер телефона должен состоять из 10 цифр</span>
+                    <input type="text" class="input input_1" required placeholder="+7 (999) 588-88-88" id="phone" onkeyup="validatePhone()">
+                    <span class="popup_text_false popup_phone_error">Номер телефона должен состоять из 10 цифр</span>
                 </div>
                 <div class="checkbox_wrap">
                     <p class="input_text writeMe_margine">Напишите мне в мессенджер</p>
@@ -751,7 +751,7 @@
 <script src="main.js"></script>
 <script>
     $(document).ready(function () {
-        $("#phone").mask("+7 (999) 999-99-99");
+        $("#phone").mask("+7 ?(999) 999-99-99");
     });
 </script>
 </body>

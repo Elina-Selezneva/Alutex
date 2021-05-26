@@ -59,3 +59,31 @@ window.addEventListener('load', ()=>{
     })
 
 })
+
+const phoneInput = document.querySelector('#phone')
+const errorText = document.querySelector('.popup_phone_error')
+
+function validatePhone() {
+    const validPhone = /^[+]\d *[(]?[0-9]{1,4}[)]?[-\s\\./0-9]*$/g
+    if (validPhone.test(phoneInput.value)) {
+        phoneInput.classList.remove('popup_false');
+        errorText.style.display = "none";
+    } else {
+        errorText.style.display = "block";
+        phoneInput.classList.add('popup_false')
+    }
+}
+
+const nameInput = document.querySelector('#popup_name')
+const errorName = document.querySelector('.popup_name_error')
+
+function validateName() {
+    const validName = /^[а-яf-z ]+$/i
+    if (validName.test(nameInput.value)) {
+        nameInput.classList.remove('popup_false');
+        errorText.style.display = "none";
+    } else {
+        errorName.style.display = "block";
+        nameInput.classList.add('popup_false')
+    }
+}

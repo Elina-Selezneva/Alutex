@@ -365,8 +365,8 @@ a{
     margin: 30px 0 50px 0;
     flex-wrap: wrap;
 }
-.page4_oneCard{
-    width: 316px;
+.page4_onecard{
+    width: 31.5%;
 }
 .page4_card_img{
     width: 100%;
@@ -382,12 +382,12 @@ a{
 .card4_img3{
     background: url("img/page3/garage3.png");
 }
-.page4_cardType{
+.page4_cardtype{
     position: absolute;
     top: 10px;
     left: 10px;
 }
-.page4_cardType_footer{
+.page4_cardtype_footer{
     position: absolute;
     bottom: 10px;
     left: 10px;
@@ -459,7 +459,7 @@ a{
     display: flex;
 }
 .card4_price{
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 600;
     line-height: 34px;
 }
@@ -631,6 +631,7 @@ a{
 .form_wrap{
     padding: 0 10px 0 10px;
     margin: auto;
+    height: 218px;
     background: #ffffff;
 }
 

@@ -66,6 +66,10 @@ a{
     width: 200px;
     height: 40px;
 }
+.container__zamer_grey:hover{
+    background: indianred;
+    color: black;
+}
 .container__text{
     width: 19%;
     font-family: Gilroy, sans-serif;
@@ -98,7 +102,7 @@ a{
     color: #8F8F8F;
     cursor: pointer;
 }
-.container__oneLink_active{
+.container__oneLink:hover{
     color: #FF8000;
 }
 .container__page1{
@@ -125,7 +129,6 @@ a{
     border-left: 1px solid white;
 }
 .page1_title{
-    font-family: Gilroy, sans-serif;
     font-size: 66px;
     font-style: normal;
     font-weight: 700;
@@ -183,13 +186,17 @@ a{
     margin: 0 32px 0 0;
     cursor: pointer;
 }
-.nav_link_active{
+.nav_link:hover{
     color: #A30000;
     border-bottom: 1px solid #A30000;
 }
 .container__zamer_nav2{
     border: 1px solid #A30000;
     color: #A30000;
+}
+.container__zamer_nav2:hover{
+    border: 1px solid black;
+    color: black;
 }
 .container__zamer_nav2_size{
     width: 184px;
